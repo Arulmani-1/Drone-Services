@@ -1,0 +1,102 @@
+<script>if(window.location.pathname.includes('/components/')) window.location.href = '../index.html#home';</script>
+<section id="user_dashboard" style="margin: 0; padding: 0;">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside id="dashboard-sidebar" class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo/logo.png" alt="Stackly Logo"
+                    style="height: 32px; width: auto; object-fit: contain;">
+                <button class="sidebar-close-btn" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-times"></i></button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-home"></i> <span>Overview</span></a></li>
+                    <li><a href="#error404" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-calendar-alt"></i> <span>My Bookings</span></a></li>
+                    <li><a href="#error404" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-heart"></i> <span>Saved Drones</span></a></li>
+                    <li><a href="#error404" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Area -->
+        <main class="dashboard-main">
+            <header class="dashboard-topbar">
+                <div class="topbar-left">
+                    <span class="header-welcome">Welcome, <strong>User</strong></span>
+                    <span class="header-user-email" style="margin-left: 10px;">user@example.com</span>
+                </div>
+                <div class="topbar-right">
+                    <div class="header-user-info">
+                        <span class="header-role">USER</span>
+                    </div>
+                    <div class="header-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <button class="header-logout-btn" onclick="window.handleLogout(event)">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                    <button class="mobile-menu-btn" onclick="document.getElementById('dashboard-sidebar').classList.toggle('show')"><i class="fas fa-bars"></i></button>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <h1 class="dashboard-title">Welcome back, John!</h1>
+
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h4>Active Bookings</h4>
+                            <h2>2</h2>
+                        </div>
+                        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h4>Saved Drones</h4>
+                            <h2>5</h2>
+                        </div>
+                        <div class="stat-icon"><i class="fas fa-heart"></i></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h4>Total Spent</h4>
+                            <h2>$450</h2>
+                        </div>
+                        <div class="stat-icon"><i class="fas fa-wallet"></i></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-panel">
+                    <div class="panel-header">
+                        <h3>Recent Bookings</h3>
+                        <button class="panel-action-btn" onclick="window.location.hash='#error404'">View All</button>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wedding Photography</td>
+                                <td>Oct 15, 2026</td>
+                                <td>Boston, MA</td>
+                                <td><span class="status-badge status-pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Real Estate Video</td>
+                                <td>Sep 28, 2026</td>
+                                <td>New York, NY</td>
+                                <td><span class="status-badge status-completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>

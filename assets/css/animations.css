@@ -1,0 +1,71 @@
+@keyframes rotateOuter { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes rotateInner { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+@keyframes pulse { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } }
+@keyframes fadeInOut { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+/* Global Reveal Classes */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-zoom {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-zoom.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Custom Cursor Glow */
+.cursor-glow {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0,229,212,0.15) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    position: fixed;
+    top: 0; left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    transition: width 0.3s, height 0.3s, background 0.3s;
+}
+
+.cursor-glow.active {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(14,165,233,0.2) 0%, rgba(0,0,0,0) 70%);
+}

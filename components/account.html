@@ -1,0 +1,59 @@
+<script>if(window.location.pathname.includes('/components/')) window.location.href = '../index.html#home';</script>
+<section class="account-hero">
+    <div class="account-hero-overlay"></div>
+    <div class="container account-hero-content">
+        <h1 class="reveal-up">Edit Your <span
+                style="text-decoration: underline; text-underline-offset: 8px;">Account</span></h1>
+        <p class="reveal-up delay-100">If you're buying a drone for the first time, you may want to consider the
+            features, flight time, camera resolution, accessories and ease of use.</p>
+    </div>
+</section>
+
+<section id="account" class="account-section section-padding">
+    <div class="container">
+        <div class="login-form-container">
+            <h2>Login</h2>
+            <form class="account-login-form">
+                <div class="form-group">
+                    <label for="username">Username or email address <span class="required">*</span></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group recaptcha-group">
+                    <div class="recaptcha-placeholder">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="not_robot">
+                            <span class="checkmark"></span>
+                            I'm not a robot
+                        </label>
+                        <div class="recaptcha-logo">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span style="font-size: 0.5rem; display: block; margin-top: 2px;">reCAPTCHA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group remember-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="rememberme" id="rememberme" value="forever">
+                        <span class="checkmark" style="border-radius: 2px;"></span>
+                        Remember me
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-login" onclick="window.location.hash='#error404'" name="login" value="Log in">LOG IN</button>
+                </div>
+
+                <p class="lost_password">
+                    <a href="#error404">Lost your password?</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>

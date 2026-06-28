@@ -1,0 +1,257 @@
+.pilot-hero-section {
+    position: relative;
+    padding: 200px 0 150px;
+    background-color: #212c32; /* Fallback */
+    background: url('https://images.unsplash.com/photo-1527961122692-074092ff5e13?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pilot-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.7));
+    z-index: 1;
+}
+
+.pilot-hero-section h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Outfit', sans-serif;
+}
+
+.pilot-hero-section p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #dddddd;
+    font-family: 'Georgia', serif;
+}
+
+.pilot-info-section {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+}
+
+.pilot-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.pilot-info-content h5.section-tag {
+    color: #666;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.pilot-info-content h2 {
+    font-size: 3.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: 'Outfit', sans-serif;
+}
+
+.pilot-info-content p.serif-text {
+    font-size: 1.05rem;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+    padding-right: 20px;
+}
+
+.btn-orange-pill {
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-orange-pill:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.pilot-info-image img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+@media(max-width: 992px) {
+    .pilot-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pilot-info-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .pilot-info-content p.serif-text {
+        padding-right: 0;
+    }
+}
+
+.pilot-team-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-tag-centered {
+    color: #666;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pilot-team-section h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+
+.pilot-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 30px;
+    margin-bottom: 50px;
+}
+
+.pilot-team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pilot-img-wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    background-color: #e8e8e8;
+}
+
+.pilot-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pilot-team-member h6 {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #666;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.pilot-team-member h3 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.pilot-team-member p.serif-text {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    max-width: 280px;
+}
+
+.pilot-social {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.pilot-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #00b4d8;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pilot-social a:hover {
+    background-color: #0096c7;
+    transform: translateY(-2px);
+}
+
+.btn-contact-orange {
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 14px 45px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-contact-orange:hover {
+    background-color: #e65c00;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@media(max-width: 1200px) {
+    .pilot-team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 992px) {
+    .pilot-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 576px) {
+    .pilot-team-grid {
+        grid-template-columns: 1fr;
+    }
+}

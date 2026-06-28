@@ -1,0 +1,89 @@
+/* Cart Hero Banner */
+.cart-hero {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    margin-top: 90px; /* offset for fixed navbar */
+}
+
+.cart-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 100%);
+    z-index: 1;
+}
+
+.cart-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 2rem 0;
+}
+
+.cart-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.cart-hero-content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* Cart Section */
+.cart-section {
+    background-color: #ffffff;
+    padding: 60px 0 100px 0;
+    min-height: 40vh;
+}
+
+.cart-empty-message {
+    background-color: #f1f1f1;
+    border-top: 3px solid #333;
+    padding: 20px 25px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+.cart-empty-message .info-icon {
+    color: #00a8ff;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+.btn-return-shop {
+    display: inline-block;
+    background: #ffffff;
+    border: 2px solid #333;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-return-shop:hover {
+    background: #333;
+    color: #ffffff;
+}

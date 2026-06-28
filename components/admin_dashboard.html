@@ -1,0 +1,105 @@
+<script>if(window.location.pathname.includes('/components/')) window.location.href = '../index.html#home';</script>
+<section id="admin_dashboard" style="margin: 0; padding: 0;">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside id="dashboard-sidebar" class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo/logo.png" alt="Stackly Logo"
+                    style="height: 32px; width: auto; object-fit: contain;">
+                <button class="sidebar-close-btn" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-times"></i></button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                    <li><a href="#error404" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-users"></i> <span>Users</span></a></li>
+                    <li><a href="#error404" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-calendar-check"></i> <span>All Bookings</span></a></li>
+                    <li><a href="#error404" onclick="document.getElementById('dashboard-sidebar').classList.remove('show')"><i class="fas fa-box"></i> <span>Inventory</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Area -->
+        <main class="dashboard-main">
+            <header class="dashboard-topbar">
+                <div class="topbar-left">
+                    <span class="header-welcome">Welcome, <strong>Admin</strong></span>
+                    <span class="header-user-email" style="margin-left: 10px;">user@example.com</span>
+                </div>
+                <div class="topbar-right">
+                    <div class="header-user-info">
+                        <span class="header-role">ADMIN</span>
+                    </div>
+                    <div class="header-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <button class="header-logout-btn" onclick="window.handleLogout(event)">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                    <button class="mobile-menu-btn" onclick="document.getElementById('dashboard-sidebar').classList.toggle('show')"><i class="fas fa-bars"></i></button>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <h1 class="dashboard-title">Platform Overview</h1>
+
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h4>Total Users</h4>
+                            <h2>1,284</h2>
+                        </div>
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h4>Total Bookings</h4>
+                            <h2>432</h2>
+                        </div>
+                        <div class="stat-icon"><i class="fas fa-book"></i></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h4>Monthly Revenue</h4>
+                            <h2>$12,450</h2>
+                        </div>
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-panel">
+                    <div class="panel-header">
+                        <h3>Recent Transactions</h3>
+                        <button class="panel-action-btn" onclick="window.location.hash='#error404'">Export Report</button>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Service</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sarah Jenkins</td>
+                                <td>Event Coverage</td>
+                                <td>$350</td>
+                                <td>Oct 10, 2026</td>
+                                <td><span class="status-badge status-completed">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Mike Tyson</td>
+                                <td>Property Survey</td>
+                                <td>$800</td>
+                                <td>Oct 09, 2026</td>
+                                <td><span class="status-badge status-pending">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>

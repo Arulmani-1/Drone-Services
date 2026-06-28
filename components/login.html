@@ -1,0 +1,48 @@
+<script>if(window.location.pathname.includes('/components/')) window.location.href = '../index.html#home';</script>
+<section id="login" class="login-page">
+    <div class="login-container">
+        <div class="login-box glass-panel reveal-up">
+            <h2 class="login-title">Welcome Back</h2>
+            <p class="login-subtitle">Enter your credentials to access your account.</p>
+
+            <form class="login-form" onsubmit="window.handleLogin(event, 'loginRole', 'loginEmail')">
+                <div class="input-group">
+                    <select id="loginRole" required style="cursor: pointer;">
+                        <option value="" disabled selected hidden></option>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <label for="loginRole">Select Role</label>
+                    <div class="input-line"></div>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="loginEmail" required placeholder=" ">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="input-line"></div>
+                </div>
+                <div class="input-group" style="margin-top: 30px; position: relative;">
+                    <input type="password" id="loginPassword" required placeholder=" ">
+                    <label for="loginPassword">Password</label>
+                    <div class="input-line"></div>
+                    <i class="far fa-eye-slash password-toggle"
+                        onclick="window.togglePasswordVisibility('loginPassword', this)"></i>
+                </div>
+
+                <div class="login-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn-cyan magnetic-btn"
+                    style="width: 100%; margin-top: 25px;">LOGIN</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#signup">Sign up here</a></p>
+            </div>
+        </div>
+    </div>
+</section>

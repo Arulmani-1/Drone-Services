@@ -1,0 +1,436 @@
+.testimonials-hero-section {
+    position: relative;
+    padding: 220px 0 160px;
+    background-color: #1a1a1a;
+    background: url('https://images.unsplash.com/photo-1524146128017-ba4548ae8196?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    color: #ffffff;
+    overflow: hidden;
+    text-align: left;
+}
+
+.testimonials-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 35, 40, 0.85); /* Dark overlay to match screenshot */
+    z-index: 1;
+}
+
+.testimonials-hero-section .hero-text-content {
+    max-width: 700px;
+}
+
+.testimonials-hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.testimonials-hero-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #cccccc;
+    font-family: 'Georgia', serif;
+}
+
+@media(max-width: 768px) {
+    .testimonials-hero-section {
+        padding: 150px 0 100px;
+        text-align: center;
+    }
+    .testimonials-hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .testimonials-hero-section .hero-text-content {
+        margin: 0 auto;
+    }
+}
+
+.testimonial-quote-section {
+    padding: 80px 0 0 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.quote-text-col {
+    position: relative;
+    padding: 40px 0;
+}
+
+.quote-mark {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    font-size: 15rem;
+    color: #e2e8f0;
+    font-family: Georgia, serif;
+    line-height: 1;
+    z-index: 0;
+    user-select: none;
+}
+
+.quote-text-col h2 {
+    font-size: 2.8rem;
+    color: #444;
+    font-weight: 700;
+    line-height: 1.35;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+.quote-author {
+    font-size: 1.1rem;
+    color: #888;
+    font-family: 'Georgia', serif;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-img-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.quote-img-col img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+@media(max-width: 992px) {
+    .quote-grid {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
+    }
+    
+    .quote-text-col h2 {
+        font-size: 2.2rem;
+    }
+    
+    .quote-mark {
+        left: 0;
+    }
+}
+
+.testimonial-dark-quote-section {
+    position: relative;
+    padding: 120px 0;
+    background-color: #111;
+    background: url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    color: #ffffff;
+}
+
+.dark-quote-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 20, 25, 0.9);
+    z-index: 1;
+}
+
+.dark-quote-mark {
+    font-size: 8rem;
+    color: #4a5568;
+    font-family: Georgia, serif;
+    line-height: 0.5;
+    margin-bottom: 20px;
+}
+
+.dark-quote-text {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: 'Outfit', sans-serif;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.dark-quote-author {
+    font-size: 1.1rem;
+    color: #a0aec0;
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+}
+
+.dark-quote-author-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid transparent;
+}
+
+.dark-quote-author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 768px) {
+    .dark-quote-text {
+        font-size: 1.8rem;
+    }
+}
+
+.testimonial-slider-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.slider-btn {
+    background: #f4f4f4;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.slider-btn:hover {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.slider-track-container {
+    overflow: hidden;
+    max-width: 850px;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    background-color: #e8e8e8;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.slide-quote-icon {
+    font-size: 3rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.slide-role {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #333;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.slide-name {
+    font-size: 1.6rem;
+    color: #444;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+
+.client-logos-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    border-top: 1px solid #eaeaea;
+}
+
+.logo-item {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.logo-item:hover {
+    opacity: 1;
+}
+
+@media(max-width: 992px) {
+    .slider-container {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .slider-container {
+        gap: 10px;
+    }
+    
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .slide-text {
+        font-size: 1rem;
+    }
+    
+    .client-logos-row {
+        justify-content: center;
+    }
+}
+
+.testimonial-experience-section {
+    position: relative;
+    padding: 100px 0;
+    color: #ffffff;
+    background-color: #111;
+    background: url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+}
+
+.exp-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(20, 15, 30, 0.9), rgba(5, 20, 35, 0.95));
+    z-index: 1;
+}
+
+.testimonial-experience-section h2 {
+    font-size: 2.8rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.exp-subtitle {
+    font-size: 1.1rem;
+    font-family: 'Georgia', serif;
+    color: #aaaaaa;
+    margin-bottom: 70px;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.exp-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exp-quote-icon {
+    font-size: 4.5rem;
+    color: rgba(255, 255, 255, 0.15);
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.exp-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cccccc;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 30px;
+    min-height: 120px;
+}
+
+.exp-role {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.exp-name {
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media(max-width: 1200px) {
+    .exp-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 30px;
+    }
+    
+    .exp-text {
+        min-height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .exp-grid {
+        grid-template-columns: 1fr;
+    }
+}

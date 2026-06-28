@@ -1,0 +1,456 @@
+.news-hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    padding: 250px 0 150px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.news-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, rgba(15, 28, 48, 0.95) 0%, rgba(15, 28, 48, 0.4) 100%);
+    z-index: 1;
+}
+
+.news-hero-content {
+    max-width: 650px;
+    color: var(--text-main);
+}
+
+.news-hero-content h1 {
+    font-size: 4rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.news-hero-content .underlined {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+    text-decoration-color: #ffffff;
+}
+
+.news-hero-content p {
+    font-size: 1.15rem;
+    font-family: 'Georgia', serif;
+    color: #e2e8f0;
+    line-height: 1.8;
+}
+
+@media(max-width: 768px) {
+    .news-hero-content h1 {
+        font-size: 2.8rem;
+    }
+}
+
+.news-content-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.news-layout {
+    display: flex;
+    gap: 50px;
+}
+
+.news-main-col {
+    flex: 1;
+    max-width: 68%;
+}
+
+.news-sidebar {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+/* Post Styling */
+.post-img-wrap {
+    margin-bottom: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.post-img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+}
+
+.post-meta-top {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.post-meta-top .dot {
+    color: #00E5D4;
+    margin: 0 10px;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+.post-meta-bottom {
+    font-family: 'Georgia', serif;
+    color: #777777;
+    font-size: 0.95rem;
+}
+
+.post-meta-bottom span {
+    margin: 0 5px;
+}
+
+/* Sidebar Widgets */
+.sidebar-widget {
+    margin-bottom: 50px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    padding: 15px 25px;
+    border: 1px solid #dddddd;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    background: #ffffff;
+    color: #333333;
+}
+
+.search-btn {
+    background-color: #222222;
+    color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #00E5D4;
+}
+
+.widget-title {
+    font-size: 1.4rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* Recent Posts */
+.recent-post-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.recent-post-item:last-child {
+    border-bottom: none;
+}
+
+.recent-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.recent-text {
+    flex: 1;
+}
+
+.recent-date {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #555555;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.recent-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333333;
+    line-height: 1.4;
+}
+
+.recent-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.recent-title a:hover {
+    color: #00E5D4;
+}
+
+/* Categories List */
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: #555555;
+}
+
+.category-list li:last-child {
+    border-bottom: none;
+}
+
+.category-list li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.category-list li a:hover {
+    color: #00E5D4;
+}
+
+@media(max-width: 992px) {
+    .news-layout {
+        flex-direction: column;
+    }
+    .news-main-col {
+        max-width: 100%;
+    }
+    .news-sidebar {
+        width: 100%;
+    }
+}
+
+/* Post Excerpt */
+.news-post {
+    margin-bottom: 60px;
+}
+
+.post-excerpt {
+    margin: 25px 0;
+}
+
+.post-excerpt p {
+    font-family: 'Georgia', serif;
+    color: #666666;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.post-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.post-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #999999;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.post-socials a:hover {
+    background-color: #00E5D4;
+}
+
+.btn-continue {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #333333;
+    border-radius: 30px;
+    color: #333333;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-continue:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Carousel */
+.carousel-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: background 0.3s;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    background: #00E5D4;
+    color: #fff;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background: #fff;
+}
+
+/* Quote Post */
+.post-quote-wrap {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.quote-bg {
+    position: relative;
+    padding: 100px 50px;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(64, 186, 200, 0.85); /* Teal overlay */
+    z-index: 1;
+}
+
+.quote-content {
+    position: relative;
+    z-index: 2;
+    color: #4a3b32; /* Dark brownish text */
+}
+
+.quote-icon {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.quote-content blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 1.3;
+    margin: 0 0 35px 0;
+}
+
+.quote-line {
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 0 auto 35px;
+    opacity: 0.7;
+}
+
+.quote-content cite {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    opacity: 0.9;
+}

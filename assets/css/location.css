@@ -1,0 +1,125 @@
+/* Location Hero */
+.location-hero {
+    background-color: #2d2c31;
+    padding: 200px 0 120px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.location-hero-content {
+    max-width: 650px;
+    color: #ffffff;
+}
+
+.location-hero-content h1 {
+    font-size: 3.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.location-hero-content .underlined {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+    text-decoration-color: #ffffff;
+}
+
+.location-hero-content p {
+    font-size: 1.05rem;
+    font-family: 'Georgia', serif;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Location Content */
+.location-content-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.location-layout {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.location-info-col {
+    flex: 1;
+}
+
+.location-map-col {
+    flex: 1;
+}
+
+.location-title {
+    font-size: 2.8rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.location-desc {
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Contact Grid Details */
+.contact-grid-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 20px;
+}
+
+.detail-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.detail-icon {
+    font-size: 1.5rem;
+    color: #333333;
+    line-height: 1;
+    width: 25px;
+    text-align: center;
+}
+
+.detail-text h5 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.detail-text p {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: #777777;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Map */
+.map-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media(max-width: 992px) {
+    .location-layout {
+        flex-direction: column;
+    }
+    .contact-grid-details {
+        grid-template-columns: 1fr;
+    }
+}

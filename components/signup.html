@@ -1,0 +1,54 @@
+<script>if(window.location.pathname.includes('/components/')) window.location.href = '../index.html#home';</script>
+<section id="signup" class="login-page">
+    <div class="login-container">
+        <div class="login-box glass-panel reveal-up">
+            <h2 class="login-title">Create Account</h2>
+            <p class="login-subtitle">Join us to manage your drone services.</p>
+            
+            <form class="login-form" onsubmit="window.handleSignup(event, 'signupRole', 'signupName', 'signupEmail')">
+                <div class="input-group">
+                    <select id="signupRole" required style="cursor: pointer;">
+                        <option value="" disabled selected hidden></option>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <label for="signupRole">Select Role</label>
+                    <div class="input-line"></div>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="signupName" required placeholder=" ">
+                    <label for="signupName">Full Name</label>
+                    <div class="input-line"></div>
+                </div>
+                
+                <div class="input-group" style="margin-top: 25px;">
+                    <input type="email" id="signupEmail" required placeholder=" ">
+                    <label for="signupEmail">Email Address</label>
+                    <div class="input-line"></div>
+                </div>
+                
+                <div class="input-group" style="margin-top: 25px; position: relative;">
+                    <input type="password" id="signupPassword" required placeholder=" ">
+                    <label for="signupPassword">Password</label>
+                    <div class="input-line"></div>
+                    <i class="far fa-eye-slash password-toggle" onclick="window.togglePasswordVisibility('signupPassword', this)"></i>
+                </div>
+                
+                <div class="input-group" style="margin-top: 25px; position: relative;">
+                    <input type="password" id="signupConfirmPassword" required placeholder=" ">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <div class="input-line"></div>
+                    <i class="far fa-eye-slash password-toggle" onclick="window.togglePasswordVisibility('signupConfirmPassword', this)"></i>
+                </div>
+                
+                <button type="submit" class="btn-cyan magnetic-btn" style="width: 100%; margin-top: 35px;">SIGN UP</button>
+            </form>
+            
+            <div class="login-footer">
+                <p>Already have an account? <a href="#login">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
