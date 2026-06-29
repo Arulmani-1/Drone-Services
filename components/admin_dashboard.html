@@ -35,7 +35,13 @@
                     <button class="header-logout-btn" onclick="window.handleLogout(event)">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </button>
-                    <button class="mobile-menu-btn" onclick="document.getElementById('dashboard-sidebar').classList.toggle('show')"><i class="fas fa-bars"></i></button>
+                    <button class="mobile-menu-btn" style="padding: 0;" onclick="document.getElementById('dashboard-sidebar').classList.toggle('show')">
+                        <div class="hamburger" style="display: flex;">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </button>
                 </div>
             </header>
 
